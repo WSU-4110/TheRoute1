@@ -168,7 +168,18 @@ android {
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
-    implementation("com.facebook.react:react-android")
+    /*
+    implementation ("com.facebook.react:react-android")
+    implementation 'com.mapbox.maps:android:10.18.0' // Latest version
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.2' // Consider updating
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation:2.0.0' // Consider updating
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-turf:6.11.0' // Consider updating
+    */
+    implementation 'com.mapbox.maps:android:10.18.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.2'
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation:2.0.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-turf:6.11.0'
+
 
     def isGifEnabled = (findProperty('expo.gif.enabled') ?: "") == "true";
     def isWebpEnabled = (findProperty('expo.webp.enabled') ?: "") == "true";
